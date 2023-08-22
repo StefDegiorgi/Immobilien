@@ -1,0 +1,119 @@
+/* pages */
+.p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: var(--shadow);
+    border-radius: .5rem;
+    width: calc(100% - .5rem);
+    margin: .375rem 0;
+    padding: .25rem;
+}
+
+/* header */
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    margin: 0;
+}
+
+h2, h3 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+h3 {
+    width: 60%;
+    font-size: 19px;
+    margin: .5rem 0 0 0;
+}
+
+.right h2 {
+    margin-left: 40%;
+}
+
+/* text */
+main p {
+    text-align: justify;
+    width: 60%;
+    font-size: 18px;
+}
+
+.p span {
+    width: calc(40% - .5rem);
+    height: 100%;
+    margin-top: -1.375rem;
+}
+
+/* images */
+.p img {
+    object-fit: cover;
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* anchor */
+.p div:not(#slides) {
+    visibility: hidden;
+    margin-top: -3rem;
+}
+
+#large {
+    position: absolute;
+    height: calc(100% - .5rem);
+    top: .25rem;
+    right: 0;
+    margin-top: 0;
+}
+
+/* ----- image slideshow ----- */
+#slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/1;
+}
+
+#slides img {
+    display: none;
+}
+
+.visible {
+    display: block !important;
+}
+
+#slides button {
+    position: absolute;
+    border-radius: 50%;
+    font-weight: 800;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#prev {left: .25rem;}
+#next {right: .25rem;}
+
+/* mobile */
+@media screen and (max-width: 550px) {
+    .right h2 {
+        margin-left: 0;
+    }
+    main p {
+        width: 100%;
+    }
+    .p span {
+        width: 100%;
+        height: 6rem !important;
+        margin: .5rem 0 !important;
+    }
+    #large {
+        position: relative;
+    }
+}
