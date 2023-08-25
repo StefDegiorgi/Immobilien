@@ -1,5 +1,5 @@
 # Immobilien
-This is a website about real estate prices and all the factors that can affect a price. The factors have been divided and described in three different topics.
+This is a old website that I made a long time ago about real estate prices and all the factors that can affect a price. The factors have been divided and described in three different topics.
 
 ## Link to the Website
 
